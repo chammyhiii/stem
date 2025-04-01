@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STEM</title>
+    <title>Đại Học Đa Năng - Tin tức</title>
     <style>
         body {
             margin: 0;
@@ -113,6 +113,11 @@
             display: block;
             margin-top: 15px;
         }
+        .article-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
@@ -121,9 +126,9 @@
         <img class="logo" src="LOGO.png" alt="Logo Đại Học Đa Năng">
         
         <div class="banner-content">
-            <div class="main-title">STEM LIÊN MÔN</div>
-            <div class="sub-title">TRUNG TÂM TIN TỨC GIÁO DỤC QUỐC PHÒNG - AN NINH</div>
-            <div class="english-title">Center of National Defense - Security Education</div>
+            <div class="main-title">ĐẠI HỌC ĐA NĂNG</div>
+            <div class="sub-title">TRUNG TÂM GIÁO DỤC QUỐC PHÒNG - AN NINH VÀ THỂ THAO</div>
+            <div class="english-title">Center of National Defense - Security Education and Sports - UTD</div>
         </div>
     </div>
     
@@ -139,28 +144,32 @@
                 "title": "Hội thảo khoa học quốc tế về giáo dục quốc phòng",
                 "source": "Phòng Truyền thông",
                 "date": "2023-05-15T09:30:00",
-                "url": "https://www.youtube.com/"
+                "url": "https://www.youtube.com/",
+                "image": "https://moet.gov.vn/content/tintuc/PublishingImages/AnhTinBai/vn.BLR2.jpg?RenditionID=8",
             },
             {
                 "id": 2,
                 "title": "Giải thể thao sinh viên toàn trường năm 2023",
                 "source": "Trung tâm Thể thao",
                 "date": "2023-05-10T14:00:00",
-                "url": "https://www.youtube.com/watch?v=1IHZaElzcpc"
+                "url": "https://www.youtube.com/watch?v=1IHZaElzcpc",
+                "image": "https://via.placeholder.com/300x180",
             },
             {
                 "id": 3,
                 "title": "Tập huấn công tác an ninh mạng cho cán bộ giảng viên",
                 "source": "Phòng Công nghệ Thông tin",
                 "date": "2023-05-05T08:45:00",
-                "url": "https://www.vietnamplus.vn/nam-bo-don-con-mua-lon-giai-nhiet-vao-dau-thang-tu-xam-nhap-man-giam-dan-post1023993.vnp"
+                "url": "https://www.vietnamplus.vn/nam-bo-don-con-mua-lon-giai-nhiet-vao-dau-thang-tu-xam-nhap-man-giam-dan-post1023993.vnp",
+                "image": "https://via.placeholder.com/300x180",
             },
             {
                 "id": 4,
                 "title": "Lễ ký kết hợp tác với trường đại học quốc tế",
                 "source": "Phòng Hợp tác Quốc tế",
                 "date": "2023-04-28T10:15:00",
-                "url": "bai-viet-4.html"
+                "url": "bai-viet-4.html",
+                "image": "https://via.placeholder.com/300x180",
             }
         ];
 
@@ -187,6 +196,7 @@
                 articleElement.innerHTML = `
                     <a href="${article.url}" class="article-link">
                         <div class="article-content">
+                            <img class="article-image" src="${article.image}" alt="Hình ảnh bài viết">
                             <h3 class="article-title">${article.title}</h3>
                             <div class="article-meta">
                                 <span class="article-source">${article.source}</span>
